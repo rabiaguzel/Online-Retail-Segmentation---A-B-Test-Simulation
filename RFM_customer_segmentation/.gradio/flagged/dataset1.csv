@@ -1,0 +1,7 @@
+Discount Effect Probability,Frequency Increment for Discounted Customers,output 0,output 1,timestamp
+0.65,1,"Total 'At Risk' customers: 853
+Group A size: 426
+Group B size: 427
+Group A mean Frequency: 1.350
+Group B mean Frequency: 2.115
+T-test p-value: 1.6940e-36",.gradio\flagged\output 1\1550bec472ef48080d6d\ab_test_plot.png,2025-06-24 20:14:40.486577

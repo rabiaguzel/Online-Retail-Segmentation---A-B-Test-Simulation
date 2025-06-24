@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api:
+    build: . 
+    command: python app/app.py
+    ports:
+     - "5000:5000"
+
+  streamlit:
+    build: .
+    command: streamlit run app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+  
+  gradio:
+    build: .
+    command: python app/gradio_app.py
+    ports:
+      - "7860:7860"
